@@ -359,9 +359,22 @@ tr.heading {
 
 img {
     border: none;
+    max-width: 100%;
+    height: auto;
 }
 
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+@media (max-width: 600px) {
+    table.imgtable, table.imgtable tr, table.imgtable td {
+        display: block;
+        width: 100%;
+    }
+    table.imgtable img {
+        display: block;
+        margin: 0 auto 1em auto;
+    }
 }
